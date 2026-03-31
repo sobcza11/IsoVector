@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IsoVector (IV) — System State Diagnostics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand">IsoVector (IV)</div>
+        <div class="brand-subtitle">System State Diagnostics</div>
+      </div>
+      <div class="release-tag">Tier 1 Build</div>
+    </header>
+
+    <main class="main-grid">
+      <aside class="sidebar-panel">
+        <div class="panel-kicker">IV SYSTEM LAYERS</div>
+
+        <nav class="sidebar-nav" aria-label="IsoVector About Navigation">
+          <button class="nav-item nav-parent active" data-view="what-is" data-parent="what-is">
+            <span>What IsoVector Is</span>
+            <span class="nav-meta">LIVE</span>
+          </button>
+
+          <div class="subnav open" data-subnav="what-is">
+            <button class="nav-item nav-child active" data-view="what-is-vector">
+              <span>Vector</span>
+            </button>
+            <button class="nav-item nav-child" data-view="what-is-iso">
+              <span>Iso</span>
+            </button>
+          </div>
+
+          <button class="nav-item" data-view="what-is-not">
+            <span>What IsoVector Is NOT</span>
+          </button>
+
+          <button class="nav-item" data-view="core-model">
+            <span>Core Model</span>
+          </button>
+
+          <button class="nav-item nav-parent" data-parent="system-architecture" data-locked="true">
+            <span>System Architecture</span>
+            <span class="nav-meta muted">PREVIEW</span>
+          </button>
+
+          <div class="subnav" data-subnav="system-architecture">
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>Equities</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>WTI</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>FX</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>GeoScen</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>OC</span>
+            </button>
+          </div>
+
+          <button class="nav-item nav-parent" data-parent="metrics-defined" data-locked="true">
+            <span>Metrics Defined</span>
+            <span class="nav-meta muted">PREVIEW</span>
+          </button>
+
+          <div class="subnav" data-subnav="metrics-defined">
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>Equities</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>WTI</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>FX</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>GeoScen</span>
+            </button>
+            <button class="nav-item nav-child locked" type="button" disabled>
+              <span>OC</span>
+            </button>
+          </div>
+
+          <button class="nav-item" data-view="intended-interpretation">
+            <span>Intended Interpretation</span>
+          </button>
+
+          <button class="nav-item" data-view="cpmai-alignment">
+            <span>CPMAI Alignment</span>
+          </button>
+        </nav>
+      </aside>
+
+      <section class="content-panel">
+        <div class="content-view active" id="view-what-is">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — System State Diagnostics</div>
+              <h1>IsoVector is a System-State Diagnostic Model</h1>
+            </div>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="lead">
+                IsoVector measures the internal condition of the macro-financial system
+                across multiple interacting dimensions.
+              </p>
+
+              <div class="formula-card">
+                <div class="formula-main">IV[t] = [P, F, L, D, M, X, C, S]</div>
+                <div class="formula-sub">
+                  Pressure • Fragility • Liquidity • Dispersion • Momentum • Cross-Asset Stress • Coherence • Systemicity
+                </div>
+              </div>
+
+              <div class="list-card">
+                <div class="section-label">Key Characteristics</div>
+                <ul class="clean-list">
+                  <li>Multi-dimensional state representation (not a single indicator)</li>
+                  <li>Measures buildup, strain, & structural alignment</li>
+                  <li>Tracks condition evolution over time</li>
+                  <li>Compares current state to historical stress configurations</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="stack-graphic">
+                <div class="stack-layer l1"></div>
+                <div class="stack-layer l2"></div>
+                <div class="stack-layer l3"></div>
+                <div class="stack-layer l4"></div>
+                <div class="stack-layer l5"></div>
+                <div class="stack-axis"></div>
+              </div>
+              <div class="visual-caption">Representation Layer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-view" id="view-what-is-vector">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — System Representation</div>
+              <h1>Vector (Model) — System Representation</h1>
+            </div>
+          </div>
+
+          <div class="two-column">
+            <div class="stacked-cards">
+              <div class="info-card">
+                <p class="lead compact">
+                  IsoVector encodes macro-financial system state as a bounded, normalized vector
+                  across interacting dimensions.
+                </p>
+                <p class="body-copy">
+                  The system is not represented by one signal. It is represented by the simultaneous
+                  interaction of multiple measured conditions inside a unified state space.
+                </p>
+              </div>
+
+              <div class="formula-card large">
+                <div class="formula-main">IV[t] ∈ R<sup>8</sup></div>
+                <div class="formula-main secondary">IV[t] = [P, F, L, D, M, X, C, S]</div>
+                <div class="formula-sub">P, F, L, D, M, X, C, S ∈ [0,1]</div>
+              </div>
+
+              <div class="formula-card">
+                <div class="section-label">Dimensional Structure</div>
+                <div class="formula-main small">IV<sub>score</sub>[t] = ∑ w<sub>i</sub> · X<sub>i</sub>[t]</div>
+                <div class="formula-sub">X<sub>i</sub>[t] = normalized component states • w<sub>i</sub> = governed weights</div>
+              </div>
+            </div>
+
+            <div class="stacked-cards">
+              <div class="info-card">
+                <div class="section-label">Key Insight</div>
+                <ul class="clean-list tight">
+                  <li>The system is not described by one signal.</li>
+                  <li>It is defined by the interaction of all components simultaneously.</li>
+                  <li>Vector form preserves structure that scalar summary alone would hide.</li>
+                </ul>
+              </div>
+
+              <div class="quote-card">
+                <div class="quote-text">
+                  Do not predict the forest fire.<br />
+                  Measure the dryness of the forest floor.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-view" id="view-what-is-iso">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — Interpretive Discipline</div>
+              <h1>Iso (Philosophy) — Interpretive Discipline</h1>
+            </div>
+          </div>
+
+          <div class="two-column">
+            <div class="stacked-cards">
+              <div class="quote-card japanese">
+                <div class="jp-line">急がば回れ (Isogaba maware)</div>
+                <div class="quote-sub">“When in haste, take the longer way around.”</div>
+              </div>
+
+              <div class="info-card">
+                <div class="section-label">Operational Principle</div>
+                <ul class="clean-list tight">
+                  <li>Condition, not prediction, first</li>
+                  <li>Structural, not narrative-driven</li>
+                  <li>Diagnostic, not reactive</li>
+                </ul>
+              </div>
+
+              <div class="info-card">
+                <div class="section-label">Philosophical Positioning</div>
+                <ul class="clean-list tight">
+                  <li>Evaluates system state relative to internal alignment</li>
+                  <li>Focuses on buildup, not event timing</li>
+                  <li>Prioritizes condition mapping before interpretation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="stacked-cards">
+              <div class="comparison-card">
+                <div class="comparison-column positive">
+                  <div class="section-label">Allowed</div>
+                  <ul class="icon-list">
+                    <li>Pressure is building</li>
+                    <li>Fragility is elevated</li>
+                    <li>Conditions resemble prior stress regimes</li>
+                  </ul>
+                </div>
+
+                <div class="comparison-column negative">
+                  <div class="section-label">Not Allowed</div>
+                  <ul class="icon-list negative-list">
+                    <li>Market will crash</li>
+                    <li>Event X will happen</li>
+                    <li>Probability = Y%</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="quote-card">
+                <div class="quote-text">
+                  Do not predict the forest fire.<br />
+                  Measure the dryness of the forest floor.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-view" id="view-what-is-not">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — Boundary Conditions</div>
+              <h1>What IsoVector Is NOT</h1>
+            </div>
+          </div>
+
+          <div class="two-column">
+            <div class="info-card full-height">
+              <ul class="clean-list">
+                <li>Not a forecasting model</li>
+                <li>Not a price prediction system</li>
+                <li>Not a sentiment-driven narrative engine</li>
+                <li>Not a single-indicator signal</li>
+                <li>Not a substitute for governed measurement in the_Spine</li>
+                <li>Not a write-back layer into OracleChambers</li>
+              </ul>
+            </div>
+
+            <div class="info-card full-height">
+              <div class="section-label">Boundary Rule</div>
+              <p class="lead compact">
+                IsoVector reads from governed measurement outputs & renders state.
+                It does not originate raw measurement logic & it does not authorize prediction.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-view" id="view-core-model">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — Core State Encoding</div>
+              <h1>Core Model</h1>
+            </div>
+          </div>
+
+          <div class="stacked-cards">
+            <div class="formula-card large">
+              <div class="formula-main">IV[t] = [P, F, L, D, M, X, C, S]</div>
+              <div class="formula-sub">State vector derived from governed component measurements</div>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric-card"><strong>P</strong><span>Pressure</span></div>
+              <div class="metric-card"><strong>F</strong><span>Fragility</span></div>
+              <div class="metric-card"><strong>L</strong><span>Liquidity</span></div>
+              <div class="metric-card"><strong>D</strong><span>Dispersion</span></div>
+              <div class="metric-card"><strong>M</strong><span>Momentum</span></div>
+              <div class="metric-card"><strong>X</strong><span>Cross-Asset Stress</span></div>
+              <div class="metric-card"><strong>C</strong><span>Coherence</span></div>
+              <div class="metric-card"><strong>S</strong><span>Systemicity</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-view" id="view-intended-interpretation">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — Intended Interpretation</div>
+              <h1>Intended Interpretation</h1>
+            </div>
+          </div>
+
+          <div class="two-column">
+            <div class="info-card full-height">
+              <ul class="clean-list">
+                <li>Interpret as condition, not direction</li>
+                <li>Read as structural state, not event timing</li>
+                <li>Use as a representation layer between measurement & interpretation</li>
+                <li>Assess similarity to historical stress configurations without implying certainty</li>
+              </ul>
+            </div>
+
+            <div class="quote-card full-height">
+              <div class="quote-text">
+                Measure first.<br />
+                Interpret second.<br />
+                Never mix the two.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-view" id="view-cpmai-alignment">
+          <div class="content-header">
+            <div>
+              <div class="content-kicker">IV SYSTEM LAYERS — Governance Alignment</div>
+              <h1>CPMAI Alignment</h1>
+            </div>
+          </div>
+
+          <div class="cpmai-grid">
+            <div class="cpmai-card">
+              <strong>Controlled</strong>
+              <span>Approved sources only</span>
+            </div>
+            <div class="cpmai-card">
+              <strong>Provenance</strong>
+              <span>Every number traceable</span>
+            </div>
+            <div class="cpmai-card">
+              <strong>Measurable</strong>
+              <span>Quantifiable outputs</span>
+            </div>
+            <div class="cpmai-card">
+              <strong>Auditable</strong>
+              <span>Reproducible logic</span>
+            </div>
+            <div class="cpmai-card">
+              <strong>Isolated</strong>
+              <span>Measurement ≠ interpretation</span>
+            </div>
+          </div>
+        </div>
+
+        <footer class="content-footer">
+          <span class="footer-label">Disclaimer</span>
+          <span>System outputs represent measured conditions, not predictions.</span>
+        </footer>
+      </section>
+    </main>
+
+    <nav class="bottom-toolbar" aria-label="Platform Modules">
+      <button class="module-tab live active" type="button">ABOUT</button>
+      <button class="module-tab preview" type="button" disabled title="Preview module — controlled release">MACRO</button>
+      <button class="module-tab in-build" type="button" disabled title="Module in governed build phase">EQUITIES</button>
+      <button class="module-tab in-build" type="button" disabled title="Module in governed build phase">WTI</button>
+      <button class="module-tab preview" type="button" disabled title="Preview module — controlled release">FX</button>
+      <button class="module-tab preview" type="button" disabled title="Preview module — controlled release">GEOSCEN</button>
+      <button class="module-tab preview" type="button" disabled title="Preview module — controlled release">OC</button>
+      <button class="module-tab in-build" type="button" disabled title="Module in governed build phase">EVENT MONITOR</button>
+      <button class="module-tab in-build" type="button" disabled title="Module in governed build phase">LOGS</button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
